@@ -1,8 +1,8 @@
 import axios from "axios";
 
-// The base URL for all our API calls
+// Use the Render backend in production, localhost in development
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/users",
+  baseURL: "https://profile-management-backend-qwee.onrender.com/api/users",
 });
 
 // Before every request, automatically attach the JWT token if one exists
